@@ -2,6 +2,7 @@
   "name": "profile",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vandobkdn.github.io/portfolio/",
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -10,7 +11,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
+    "deploy": "yarn build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
