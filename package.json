@@ -12,7 +12,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
-    "predeploy": "yarn build",
+    "predeploy": "yarn build:css && yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
