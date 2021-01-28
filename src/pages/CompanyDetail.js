@@ -50,9 +50,9 @@ export default function CompanyDetail() {
                     <ul className="pl-8">
                         {
                             (responsibilities || []).map((r, index) => (
-                                <span className="flex flex-row items-center space-x-2">
+                                <span className="flex flex-row items-center space-x-2" key={index}>
                                     <i className="fa fa-square text-blue-500 " aria-hidden="true" style={{fontSize: "12px"}}/>
-                                    <li key={index}>{r}</li>
+                                    <li>{r}</li>
                                 </span>
                             ))
                         }
@@ -66,9 +66,9 @@ export default function CompanyDetail() {
                     <ul className="pl-8">
                         {
                             (technologies || []).map((t, index) => (
-                                <span className="flex flex-row items-center space-x-2">
+                                <span className="flex flex-row items-center space-x-2" key={index}>
                                     <i className="fa fa-square text-blue-500 " aria-hidden="true" style={{fontSize: "12px"}}/>
-                                    <li key={index}>{t}</li>
+                                    <li>{t}</li>
                                 </span>
                             ))
                         }

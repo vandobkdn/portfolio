@@ -16,7 +16,7 @@ export default function Experience() {
         <div className="p-8 h-full flex flex-col">
             <Title title="Experience" />
             <section className="h-full">
-                {currentUrl === '/work-at' ? (
+                {currentUrl === '/portfolio/work-at' ? (
                     <nav className="flex flex-col h-4/5 mt-8 pt-4">
                         {
                             Companies.map((item, index) => (
