@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "baseUrl": "src",
+    "module": "commonjs"
+  },
+  "exclude": ["node_modules"],
+  "include": ["src"]
+}
